@@ -1,0 +1,5 @@
+require 'httparty'
+ 
+url = 'https://api.beerboard.com/nodejsserver/product?name=miller'
+response = HTTParty.get(url)
+response.parsed_response
